@@ -1,0 +1,19 @@
+@use "./helpers" as *;
+
+$fontF-body: "Montserrat";
+$fontF-heading: "Fraunces";
+$fontS-body: rem(14);
+
+$clr-Green-500: hsl(158, 36%, 37%);
+$clr-Green-700: hsl(158, 42%, 18%);
+
+$clr-Black: hsl(212, 21%, 14%);
+$clr-Grey: hsl(228, 12%, 48%);
+$clr-Cream: hsl(30, 38%, 92%);
+$clr-White: hsl(0, 0%, 100%);
+
+$breakpoints: (
+  "md": em(768),
+  "lg": em(992),
+  "xl": em(1368),
+) !default;
