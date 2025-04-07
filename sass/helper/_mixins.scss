@@ -1,6 +1,7 @@
 @use "./function" as *;
 @use "./variables" as *;
-@use "sass:math";
+
+@use "sass:map";
 
 // ! BREAKPOINTS -----------------------------------
 $breakpoints: (
@@ -10,7 +11,7 @@ $breakpoints: (
 );
 
 @mixin breakpoint($size) {
-  @media (width >= mab-get($breakpoints,$size)) {
+  @media (width >= map.get($breakpoints, $size)) {
     @content;
   }
 }
