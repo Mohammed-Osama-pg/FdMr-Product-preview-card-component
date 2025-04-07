@@ -1,15 +1,16 @@
+@use "./function" as *;
 // * COLORS
 $clr-white: var(--color-white);
 $clr-cream: var(--color-cream);
 $clr-black: var(--color-black);
 $clr-grey: var(--color-grey);
 $clr-green-500: var(--color-green-500);
-$clr-green-700: var(--green-700);
+$clr-green-700: var(--color-green-700);
 
 // * SPACING
-$spc-50: var(--spacing-50);
-$spc-100: var(--spacing-100);
-$spc-200: var(--spacing-200);
-$spc-300: var(--spacing-300);
-$spc-400: var(--spacing-400);
-$spc-500: var(--spacing-500);
+$spc-50: rem(4);
+$spc-100: rem(8);
+$spc-200: rem(16);
+$spc-300: rem(24);
+$spc-400: rem(32);
+$spc-500: rem(40);

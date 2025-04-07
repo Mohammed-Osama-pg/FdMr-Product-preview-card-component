@@ -1,0 +1,27 @@
+@use "../helper/" as *;
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: $spc-50;
+  padding: $spc-200 $spc-400;
+  background-color: $clr-green-500;
+  color: $clr-white;
+  border-radius: $spc-50;
+  transition: 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    background-color: $clr-green-700;
+  }
+
+  &__logo {
+    width: rem(18);
+    height: rem(18);
+  }
+  &__text {
+    @include text-preset-2;
+  }
+}

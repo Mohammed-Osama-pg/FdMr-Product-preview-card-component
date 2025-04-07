@@ -4,13 +4,7 @@
   --color-black: #1c232b;
   --color-grey: #6c7289;
   --color-green-500: #3d8168;
-  --color-green-700: #3d8168;
-  --spacing-50: rem(4);
-  --spacing-100: rem(8);
-  --spacing-200: rem(16);
-  --spacing-300: rem(24);
-  --spacing-400: rem(32);
-  --spacing-500: rem(40);
+  --color-green-700: #1b4133;
 }
 
 *,
@@ -39,4 +33,30 @@ button {
   padding: 0;
   font: inherit;
   color: inherit;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.25rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-green-500);
+  color: var(--color-white);
+  border-radius: 0.25rem;
+  transition: 0.2s ease-out;
+}
+.btn:hover, .btn:focus {
+  background-color: var(--color-green-700);
+}
+.btn__logo {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.btn__text {
+  font-family: "montserrat";
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 110%;
 }/*# sourceMappingURL=style.css.map */
