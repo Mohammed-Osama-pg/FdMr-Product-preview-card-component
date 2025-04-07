@@ -18,6 +18,7 @@ See hover and focus states for interactive elements
 ## Rescarch and links
 
 - How to estimating the time of website project: [https://www.youtube.com/watch?v=GbQ4K13ow3o].
+- typography css clamp: [https://chriskirknielsen.com/blog/modern-fluid-typography-with-clamp/]
 
 ## How much time the project will take:
 - My guess : 4 hour focus work

@@ -1,3 +1,4 @@
+@use "../helper" as *;
 *,
 *::before,
 *::after {
@@ -8,8 +9,8 @@
 
 body {
   font-family: "montserrat";
-  // font-size: rem(14);
-  font-size: 14px;
+  font-size: rem(14);
+  background-color: $clr-cream;
 }
 
 a {
