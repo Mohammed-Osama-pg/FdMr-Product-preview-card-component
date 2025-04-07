@@ -1,0 +1,75 @@
+@use "../helper/" as *;
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: rem(12);
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: $spc-50;
+
+    &__img {
+      width: 100%;
+      height: rem(342);
+      background-color: $clr-white;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: $spc-300;
+      background-color: $clr-white;
+      padding: $spc-400;
+
+      .product {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: $spc-300;
+
+        &__category {
+          @include text-preset-4;
+          color: $clr-grey;
+        }
+        &__title {
+          @include text-preset-1;
+          color: $clr-black;
+        }
+        &__description {
+          @include text-preset-3;
+          color: $clr-grey;
+        }
+      }
+
+      .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $spc-200;
+
+        &__current {
+          @include text-preset-1;
+          color: $clr-green-500;
+        }
+        &__previous {
+          @include text-preset-5;
+          color: $clr-grey;
+        }
+      }
+    }
+  }
+}
